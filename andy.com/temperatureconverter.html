@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature convertor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-box">
+      
+      <div class="inp">
+          <p>Celsius</p>
+         <input type="number" id="cel" value="0">
+      </div>
+      <div class="inp">
+        <p>Fahrenheit</p>
+
+        <input type="number" id="fah" value="32">
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="link">
+        <a href="https://youtu.be/rxvIJhcDv4w?si=-ra4p5Prvs4NPdc-">You Tube</a>
+
+  </div>
+
+  <script>
+    let cel = document.getElementById("cel");
+    let fah = document.getElementById("fah");
+
+    cel.addEventListener('input', 
+
+function(){
+      
+      let celius = cel.value;
+      let F = (9/5 * celius) + 32;
+      fah.value = F;
+    });
+
+    fah.addEventListener('input', function(){
+      
+      let f = fah.value;
+      let C = (f - 32) * 5/9;
+    
+      cel.value = C.toFixed(4);
+      
+    })
+  </script>
+</body>
+</html>

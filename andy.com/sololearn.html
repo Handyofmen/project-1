@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert ('welcome js')">click me</button> 
+    
+    <table style="border: solid; background-color: rgb(241, 229, 253);">
+       <tr>
+         <th style="border: solid;">month</th>
+         <th style="border: solid;">budget$</th>
+
+       </tr>
+    </table>
+
+    <table>
+        <tr>
+          <td style="border: solid;">january</td>
+          <td style="border: solid;">500</td>
+        </tr>
+        <tr>
+           <td style="border: solid;">ferbuary</td>
+           <td style="border: solid;">400</td>  
+        </tr>
+
+        <tr>
+           <td style="border: solid;" colspan="2">sum:900</td>
+        </tr>
+
+    </table>
+
+    <img id="robot"
+    src="https://blob.sololearn.com/courses/robot-c.jpg"><br> 
+    <button  onclick="robot.src='https://blob.sololearn.com/courses/robot-l.jpg'"> left
+    </button>
+
+    <button onclick="robot.src='https://blob.sololearn.com/courses/robot-r.jpg'">right</button>
+
+
+
+    <h2>Choose Your Products</h2>
+<div id="productSection">
+<select id="product">
+  <option value="150">SmartPhone $150</option>
+  <option value="750">Laptop $750</option>
+  <option value="120">Headphones $120</option>
+</select>
+<label><input type="checkbox" id="insurance"> Add Insurance $10</label>
+<input id="quantity" min="1">
+</div>
+<button onclick="calculate()">Calculate Total and Shipping</button>
+
+<p id="shipping">Shipping: </p> 
+    
+
+</body>
+</html>
